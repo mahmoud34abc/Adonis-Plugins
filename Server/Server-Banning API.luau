@@ -192,7 +192,7 @@ return function(Vargs)
 			if not cName and cId then cName = check end
 
 			if cId and tonumber(cId) then
-				return cId
+				return tonumber(cId)
 			end
 		elseif type(check) == "number" then
 			return check -- userid ban? old ig
